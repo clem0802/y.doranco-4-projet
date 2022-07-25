@@ -11,8 +11,13 @@ body {
     font-family: 'Outfit', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
-h2 {
+h1, h2 {
     font-weight: bold;
+}
+.add {
+    background-color: #f7ebe5;
+    border-radius: 12px;
+    width: 100%;
 }
 
 
@@ -25,14 +30,14 @@ header {
     width: 30%;
 }
 .logo {
-    width: 50%;
+    width: 60%;
     border-radius: 12px;
 }
 #menu {
     width: 75%;
 }
 .menu {
-    width: 25%;
+    width: 50%;
 }
 #menu > div:nth-child(1) {
     background-color: #32CD32;
@@ -54,8 +59,8 @@ header {
 /* MAIN */
 /* -------------------------------------------------- */
 .bloc {
-    background-color: rgb(200,200,200);
-    width: 46%;
+    background-color: #9cc289;
+    width: 80%;
     margin: 2%;
 }
 .iframe {
@@ -63,6 +68,23 @@ header {
 }
 iframe {
     width: 100%;
+}
+
+
+/* Attribution */
+/* -------------------------------------------------- */
+.attribution {
+    font-size: 14px;
+    color: white;
+}
+.attribution a {
+    color: #32CD32;
+    text-decoration: none;
+    font-weight: bold;
+}
+.attribution a:hover {
+    text-decoration: underline;
+    font-size: 18px;
 }
 
 
