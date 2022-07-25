@@ -21,7 +21,7 @@ header {
 }
 nav {
     width: 100%;
-    background-color: #59bf02;
+    background-color: #82b960;
     border-radius: 6px;
 }
 
@@ -43,7 +43,7 @@ nav {
 }
 .links a {
     color: white;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     text-decoration: none;
     font-size: 16px;
 }
@@ -129,6 +129,12 @@ h4 {
 
 /* font ICÔNES */
 /* --------------------------------- */
+footer {
+    background-color: #ecf0f1;
+    width: 300px;
+    padding: 3%;
+    border-radius: 12px;
+}
 .icon-container {
     height: 40px;
     width: 40px;
@@ -152,6 +158,7 @@ h4 {
 
 i {
     transition: transform 1s ease-in-out;
+    color: white;
 }
 i:hover {
     transform: rotate(360deg);

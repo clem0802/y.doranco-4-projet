@@ -1,0 +1,101 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(100,100,100);
+    color: #4b4a4a;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+h2 {
+    font-weight: bold;
+}
+
+
+/* HEADER */
+/* -------------------------------------------------- */
+header {
+    padding-top: 20px;
+}
+.logo-container {
+    width: 35%;
+}
+.logo {
+    width: 55%;
+    border-radius: 12px;
+}
+#menu {
+    width: 65%;
+}
+.menu {
+    width: 40%;
+}
+#menu > div:nth-child(1) {
+    background-color: #32CD32;
+    line-height: 100%;
+}
+#menu > div:nth-child(2) {
+    background-color: #9ACD32;
+    line-height: 100%;
+}
+#menu > div:nth-child(3) {
+    background-color: #32CD32;
+    line-height: 100%;
+}
+#menu > div:nth-child(4) {
+    background-color: #9ACD32;
+    line-height: 100%;
+}
+
+.back {
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(2, 115, 2);
+    font-size: 18px;
+}
+.back:hover {
+    font-size: 22px;
+    color: #4b4a4a;
+    font-weight: bold;
+}
+
+
+/* MAIN */
+/* -------------------------------------------------- */
+.bloc {
+    background-color: rgb(200,200,200);
+    width: 46%;
+    margin: 2%;
+}
+.iframe {
+    width: 75%;
+}
+iframe {
+    width: 100%;
+}
+
+
+/* FOOTER */
+/* -------------------------------------------------- */
+footer {
+    background-color: #228B22;
+}
+.footer-container {
+    width: 90%;
+}
+.footer1 {
+    height: 80px;
+    background-color: #32CD32;
+    line-height: 100%;
+    border-radius: 12px;
+}
+.footer2 {
+    height: 80px;
+    background-color: #9ACD32;
+    line-height: 100%;
+    border-radius: 12px;
+}
