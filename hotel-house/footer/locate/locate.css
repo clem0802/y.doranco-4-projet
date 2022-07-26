@@ -52,6 +52,8 @@ header {
 .back:hover {
     font-size: 22px;
     color: #4b4a4a;
+    transition: transform 1s ease-in-out;
+    text-decoration: underline;
     font-weight: bold;
 }
 
