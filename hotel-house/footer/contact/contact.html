@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+        crossorigin="anonymous"
+        /> 
+        
+        <link rel="stylesheet" type="text/css" href="print.css" media="print">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;700;900&family=Roboto&display=swap" rel="stylesheet">
+        <title>2022.07.25 | Projet (HotelHouse) - ("CONTACT part")</title>
+        <meta name="description" content="Projet (HotelHouse) - (CONTACT part)">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="contact.css">
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <header>
+            <div class="container-fluid d-flex align-items-center flex-column flex-sm-column">
+                    <div class="logo-container container-xs logo d-flex justify-content-center align-items-center ">
+                        <img src="logo.png" alt="logo of Hotel-House" class="logo rounded w-50" title="welcome to hotel-house at home">
+                    </div>
+                    <br><br>
+
+                    <div class="MENU link-container container-xs d-flex flex-column w-100 w-xl-25 w-xxl-25 justify-content-around align-items-center">
+                        <div class="menu text-center d-flex bloc container-xs md-w-75 m-1 p-1 justify-content-center align-items-center rounded">
+                            <a href="../../index.html" class="back fw-bold">Home Page</a>
+                        </div>
+
+                        <div class="menu text-center d-flex bloc container-xs md-w-75 m-1 p-1 justify-content-center align-items-center rounded">
+                            <a href="#anchor1" class="back fw-bold">Contact</a>
+                        </div>
+
+                        <div class="menu text-center d-flex bloc container-xs md-w-75 m-1 p-1 justify-content-center align-items-center rounded">
+                            <a href="#anchor2" class="back fw-bold">Subscribe</a>
+                        </div>
+
+                        <div class="menu text-center d-flex bloc container-xs md-w-75 m-1 p-1 justify-content-center align-items-center rounded">
+                            <a href="javascript:window.print()" class="back fw-bold">Print</a>
+                        </div>
+                    </div>
+            </div>
+        </header>
+        <br>
+
+
+        <!-- MAIN -->
+        <main class="d-flex flex-column ustify-content-center align-items-center">
+                <!-- CONTACT -->
+                <div class="contact d-flex w-75 row bloc rounded justify-contet-center align-items-center text-center p-3">
+                    <div id="anchor1" class=" container-fluid d-flex justify-content-center align-items-center flex-column">
+                        <h1>Contact Us</h1>
+                        <form action="https://public.herotofu.com/v1/d5377820-0cf0-11ed-9bdb-53c785fa3343" 
+                        method="post" enctype="multipart/form-data" class="form p-2 rounded">
+                            <div>
+                                <label for="nom"></label><br>
+                                <input class="rounded text-center border-0 p-2" type="text" id="nom" name="nom" placeholder="Your Name">
+                            </div>
+                            <div>
+                                <label for="prenom"></label><br>
+                                <input class="rounded text-center border-0 p-2" type="text" id="prenom" name="prenom" placeholder="Your First Name">
+                            </div>
+                            <div>
+                                <label for="number"></label><br>
+                                <input class="rounded text-center border-0 p-2" type="number" id="number" name="number" placeholder="Phone Number">
+                            </div>
+                            <div>
+                                <label for="email"></label><br>
+                                <input class="rounded text-center border-0 p-2" type="email" id="email" name="email" placeholder="Email">
+                            </div>
+                            <div>
+                                <label for="message"></label><br>
+                                <textarea name="message" id="message" cols="28" rows="10" class="rounded container-fluid text-center border-0 p-1" placeholder="Your Message"></textarea>
+                            </div>
+                            <button class="btn rounded p-2 m-1 fs-2">Send</button>
+                        </form><br><br>
+                    </div><hr>
+                </div>
+
+                <!-- NEWSLETTER -->
+                <div class="d-flex w-75 row bloc rounded justify-contet-center align-items-center text-center p-3">
+                    <form action="https://public.herotofu.com/v1/d5377820-0cf0-11ed-9bdb-53c785fa3343" 
+                    method="post" class="container">
+                        <div class="container-fluid">
+                          <h2 id="anchor2" class="d-flex justify-content-center text-center">HotelHouse<br>Newsletter</h2>
+                          <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                      
+                        <div class="container-fluid m-1" style="background-color:white">
+                          <input type="text" placeholder="Name" name="name" required class="rounded">
+                          <input type="text" placeholder="Email address" name="mail" required class="rounded">
+                          <label>
+                            <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+                          </label>
+                        </div>
+                      
+                        <div class="container-fluid">
+                          <input type="submit" value="Subscribe" class="rounded fs-2 news">
+                        </div>
+                      </form>
+                </div>
+
+
+                <!-- Attributions -->
+                <div class="attribution text-center">
+                    Hotel-House Project Exercise<br>
+                    Coded by <a target="_blank" href="https://portfolio-clemence.netlify.app">Clémence TAN</a>
+                    <p>&copy; Copyright 2022 - All rights reserved</p>
+                </div><hr>
+        </main>
+        <br>
+        
+
+        <div class="container-fluid d-flex align-items-center flex-column flex-sm-column">
+                <div class="MENU link-container container-xs d-flex flex-column w-100 w-xl-25 w-xxl-25 justify-content-around align-items-center">
+
+                    <div class="menu text-center d-flex bloc container-xs md-w-75 m-1 p-1 justify-content-center align-items-center rounded">
+                        <a href="../../index.html" class="back fw-bold">Home Page</a>
+                    </div>
+
+                    <div class="menu text-center d-flex bloc container-xs md-w-75 m-1 p-1 justify-content-center align-items-center rounded">
+                        <a href="#anchor1" class="back fw-bold">Contact</a>
+                    </div>
+
+
+                    <div class="menu text-center d-flex bloc container-xs md-w-75 m-1 p-1 justify-content-center align-items-center rounded">
+                        <a href="#anchor2" class="back fw-bold">Subscribe</a>
+                    </div>
+
+                    <div class="menu text-center d-flex bloc container-xs md-w-75 m-1 p-1 justify-content-center align-items-center rounded">
+                        <a href="javascript:window.print()" class="back fw-bold">Print</a>
+                    </div>                        
+                </div>
+                <br><br>
+
+
+                <div class="logo-container container-xs logo d-flex justify-content-center align-items-center ">
+                    <img src="logo.png" alt="logo of Hotel-House" class="logo rounded w-50" title="welcome to hotel-house at home">
+                </div>
+                
+        </div>
+        <br>
+
+
+        <!-- FOOTER -->
+        <footer class="d-flex container-fluid justify-content-center align-items-center">
+            <div class="footer-container container-lg d-flex justify-content-center align-items-center flex-xxl-row flex-xl-row flex-lg-row flex-md-column flex-sm-column flex-column">
+                <div class="footer1 container back d-flex justify-content-center align-items-center m-2 w-50">
+                    <a href="../../index.html" class="back fw-bold text-center">Home Page</a>
+                </div>
+
+                <div class="footer2 back d-flex justify-content-center align-items-center w-50 m-2 w-50">
+                    <a href="../../langs/en/en.html" class="back fw-bold text-center">English Page</a>
+                </div>
+
+                <div class="footer1 back d-flex justify-content-center align-items-center w-50 m-2 w-50">
+                    <a href="../../langs/fr/fr.html" class="back fw-bold text-center">Accueil</a>
+                </div>
+
+                <div class="footer2 back d-flex justify-content-center align-items-center w-50 m-2 w-50">
+                    <a href="../../langs/tw/tw.html" class="back fw-bold text-center">回繁中主頁</a>
+                </div>
+
+                <div class="footer1 back d-flex justify-content-center align-items-center w-50 m-2 w-50">
+                    <a href="../../langs/ch/ch.html" class="back fw-bold text-center">回简中主页</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="contact.js"></script>
+    </body>
+</html>

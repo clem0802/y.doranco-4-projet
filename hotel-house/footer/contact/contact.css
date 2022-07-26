@@ -1,0 +1,187 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(100,100,100);
+    color: #4b4a4a;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2 {
+    font-weight: bold;
+}
+a i {
+    list-style-type: none;
+    font-size: 25px;
+}
+img {
+    width: 80px;
+}
+
+/* HEADER */
+/* -------------------------------------------------- */
+header, section {
+    padding-top: 20px;
+}
+.logo-container {
+    width: 35%;
+}
+.logo {
+    width: 55%;
+    border-radius: 12px;
+}
+.MENU {
+    width: 65%;
+}
+.menu {
+    width: 40%;
+}
+.MENU > div:nth-child(1) {
+    background-color: #32CD32;
+    line-height: 100%;
+}
+.MENU > div:nth-child(2) {
+    background-color: #9ACD32;
+    line-height: 100%;
+}
+.MENU > div:nth-child(3) {
+    background-color: #32CD32;
+    line-height: 100%;
+}
+.MENU > div:nth-child(4) {
+    background-color: #9ACD32;
+    line-height: 100%;
+}
+.MENU > div:nth-child(5) {
+    background-color: #32CD32;
+    line-height: 100%;
+}
+#print-button1, #print-button2 {
+	display: none;
+}
+
+.back {
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(2, 115, 2);
+    font-size: 18px;
+}
+.back:hover {
+    font-size: 22px;
+    color: #4b4a4a;
+    font-weight: bold;
+    transition: transform 2s ease-in-out;
+    text-decoration: underline;
+}
+
+
+/* MAIN */
+/* -------------------------------------------------- */
+.bloc {
+    background-color: rgb(200,200,200);
+    width: 46%;
+    margin: 2%;
+}
+.attribution {
+    color: white;
+}
+.attribution a {
+    color: yellow;
+}
+.attribution a:hover {
+    color: orange;
+    font-weight: bold;
+    font-size: 18px;
+    transform: 2s ease-in-out;
+}
+
+/* FOOTER */
+/* -------------------------------------------------- */
+footer {
+    background-color: #228B22;
+}
+.footer-container {
+    width: 90%;
+}
+.footer1 {
+    height: 80px;
+    background-color: #32CD32;
+    line-height: 100%;
+    border-radius: 12px;
+}
+.footer2 {
+    height: 80px;
+    background-color: #9ACD32;
+    line-height: 100%;
+    border-radius: 12px;
+}
+.btn {
+    background-color: #00963e;
+    color: white;
+}
+.btn:hover {
+    font-weight: bold;
+    background-color: rgb(44, 164, 7);
+    color: rgb(76, 74, 74);
+    border: none;
+}
+
+
+/* CONTACT */
+/* -------------------------------------------- */
+.contact {
+    background-image: url("https://images.unsplash.com/photo-1493219686142-5a8641badc78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8d3JpdGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form {
+    background-color: #b7e25f9a;
+    padding: 10px;
+}
+
+
+/* NEWSLETTER */
+/* -------------------------------------------- */
+/* Style the form element with a border around it */
+/* Add some padding and a grey background color to containers */
+.news:hover {
+    font-weight: bold;
+    background-color: rgb(44, 164, 7);
+    color: rgb(76, 74, 74);
+    border: none;
+}
+
+.container {
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+  
+  /* Style the input elements and the submit button */
+input[type=text], input[type=submit], input[type=number], input[type=email] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+  
+  /* Add margins to the checkbox */
+input[type=checkbox] {
+    margin-top: 16px;
+}
+  
+  /* Style the submit button */
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+}
+  
+input[type=submit]:hover {
+    opacity: 0.8;
+}

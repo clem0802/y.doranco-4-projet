@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>2022.07.25 | Projet (HTML-CSS-JS) - ("HotelHouse")</title>
-    <meta name="description" content="Projet (HTML-CSS-JS) - (HotelHouse) - English">
-
+    <title>2022.07.25 | Projet (HotelHouse - ENGLISH)</title>
+    <meta name="description" content="Projet (HotelHouse - ENGLISH)">
     <meta charset="UTF-8">
-    <!-- displays site properly based on user's device -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="css/style.css">
     <link 
         rel="stylesheet" 
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
         crossorigin="anonymous" 
         referrerpolicy="no-referrer" 
+    />
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"
     /> 
+    <link rel="stylesheet" href="css/en.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,55 +23,204 @@
   </head>
 
   
-  <body>
-    <header>
-        <nav>
-          <div class="container-links hide">
-            <div class="links">
-                <li><a href="/">Home</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Working Experiences</a><li>                    
-                <li><a href="#">Portfolio</a></li> 
-                <li><a href="#">Contact</a></li>
-            </div>
-          </div>
-    
-          <div class="burger">
-            <i class="fa-solid fa-bars"></i>
+  <body class="">
+    <header class="d-flex flex-column justify-content-center align-items-center">
+      <div class="container-fluid border border-danger border-3 text-center fw-bold">
+          <div class="row">
+              <!-- LOGO img -->
+              <!-- ************************************************* -->
+              <div class="col-md-2 text-center text-md-start">
+                <img class="logo mx-0" src="img/logo.png" alt="hotel-house logo image" title="welcome to hotel-house at home">
+              </div>
+
+              <!-- (0) CART -->
+              <!-- ************************************************* -->
+              <div class="d-md-block col-md-10 text-center text-md-end">
+                  <div class="border border-danger border-3 container rounded text-center">
+                    <h1>Your Cart</h1>
+                    <img id="basketImage" alt="icon of a cart" src="https://mimo.app/r/cart.png" onclick="clickCart()">
+                    <h2 id="itemCounter">0</h2>
+                    <p id="orderTotal">TOTAL CHECK</p>
+                  </div>
+              </div>
           </div>
 
-          <div class="close burgers">
-            <h3>X</h3>
-          </div>
-        </nav>
-    </header>
-    <br>
-
-    <main class="main-container">
-      <div>
-        <img class="roses-img" title="flowery music" src="img/logo.png" alt="roses on a piano">
+          <nav class="row">
+              <div class="col-sm-2 bg-danger"><a href="#anchor1">Rooms</a></div>
+              <div class="col-sm-2 bg-warning"><a href="#anchor2">Exquisis</a></div>
+              <div class="col-sm-2 bg-danger"><a href="#anchor3">Spa</a></div>
+              <div class="col-sm-2 bg-danger"><a href="#anchor4">About Us</a></div>
+              <div class="col-sm-2 bg-warning"><a href="footer/follow/follow.html">Follow Us</a>
+              </div>
+              <div class="col-sm-2 bg-danger"><a href="footer/contact/contact.html">Follow Us</a>
+              </div>
+          </nav>
       </div><br>
+    </header>
 
-      <div>
-        <h2>ENGLISH</h2>
+
+      <!-- ************************************************* -->
+    <main>
+      <div class="border border-danger border-3 container p-5 rounded">
+          <h2 class="text-center">HOTEL-HOUSE</h2><br>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum sapiente iste quisquam iure, facilis, explicabo porro mollitia saepe libero cupiditate ipsa architecto error sit ratione dolores et ab placeat repellendus voluptatem laboriosam ut id. Nisi vitae qui dignissimos deleniti temporibus quas, sint quos? Eius nemo in maiores recusandae delectus et dolore, repellat inventore deleniti magni facere laboriosam iste accusamus, placeat ad quisquam odio. Similique, ea esse? Consequuntur, ad totam! Harum obcaecati illo cupiditate odio eveniet nam odit culpa incidunt earum? Quos voluptatum nobis iusto, eos sequi qui deleniti consequatur expedita veniam perspiciatis excepturi similique, ea explicabo dignissimos dicta praesentium atque.
+          </p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum sapiente iste quisquam iure, facilis, explicabo porro mollitia saepe libero cupiditate ipsa architecto error sit ratione dolores et ab placeat repellendus voluptatem laboriosam ut id. Nisi vitae qui dignissimos deleniti temporibus quas, sint quos? Eius nemo in maiores recusandae delectus et dolore, repellat inventore deleniti magni facere laboriosam iste accusamus, placeat ad quisquam odio. Similique, ea esse? Consequuntur, ad totam! Harum obcaecati illo cupiditate odio eveniet nam odit culpa incidunt earum? Quos voluptatum nobis iusto, eos sequi qui deleniti consequatur expedita veniam perspiciatis excepturi similique, ea explicabo dignissimos dicta praesentium atque.
+          </p>
       </div>
-  
-      <div>
-        <p>I tried to do more than what was required of, following the header-navbar JS exercise.<br>
-           July 22nd, 2022
-        </p>
+      <br>
+      <hr>
+      <!-- ************************************************* -->
+
+    
+      <!-- (1) ROOMS #anchor1 -->
+      <!-- ************************************************* -->
+      <h2 id="anchor1" class="text-center m-3">Our Rooms</h2>
+      <div class="border border-danger border-3 container rounded text-center">
+          <p>Please choose your room(s)</p>
+          <div class="row">
+              <div class="product col bg-success d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                  <img class="img-fluid" id="double" src="https://images.unsplash.com/photo-1590490359854-dfba19688d70?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGhvdGVsJTIwcm9vbXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="photo of double room">
+                  <h4>Double-classic</h4>
+                  <p>800€</p>
+                  <button class="btn btn-light w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(double)">Add</button>
+              </div>
+
+              <div class="col bg-success d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                  <img class="img-fluid" src="https://images.unsplash.com/photo-1602002418082-a4443e081dd1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nzl8fGhvdGVsJTIwcm9vbXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="photo of triple room">
+                  <h4>Triple-pool</h4>
+                  <p>1000€</p>
+                  <button class="btn btn-light w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(triple)">Add</button>
+              </div>
+
+              <div class="col bg-success d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                  <img class="img-fluid" src="https://images.unsplash.com/photo-1594130139005-3f0c0f0e7c5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTI5fHxob3RlbCUyMHJvb218ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="photo of quadruple room">
+                  <h4>Quadruple-family</h4>
+                  <p>1200€</p>
+                  <button class="btn btn-light w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(quadruple)">Add</button>
+              </div>
+          </div>
       </div>
-      
-      <div class="attribution">
-        JS lessons on Header-Navbar exercise<br>
-        Coded by <a target="_blank" href="https://portfolio-clemence.netlify.app">Clémence TAN</a>
-        <!-- <a target="_blank" href="https://navbar-clem.netlify.app">Clémence TAN</a> -->
+      <br>
+      <hr>
+
+
+      <!-- (2) FOOD #anchor2 -->
+      <!-- ************************************************* -->
+      <h2 id="anchor2" class="text-center">Exquisis</h2>
+      <div class="border border-danger border-3 container rounded text-center">
+        <p>Please choose something tasty</p>
+        <div class="row">
+            <!-- dishes -->
+              <div class="product col bg-success d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="salmon" src="https://images.unsplash.com/photo-1529566745363-92b5ed5e261c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTR8fHNhbG1vbiUyMGRpc2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="photo of double room">
+                <h4>Salmon</h4>
+                <p>50€</p>
+                <button class="btn btn-light w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(salmon)">Add</button>
+              </div>
+              <div class="product col bg-success d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="salad" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="photo of double room">
+                <h4>Salad</h4>
+                <p>50€</p>
+                <button class="btn btn-light w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(salad)">Add</button>
+              </div>
+              <div class="product col bg-success d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="chicken" src="https://images.unsplash.com/photo-1609016580259-e04ddc09a850?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fHJvYXN0ZWQlMjBjaGlja2VufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="photo of double room">
+                <h4>Chicken</h4>
+                <p>50€</p>
+                <button class="btn btn-light w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(chicken)">Add</button>
+              </div>
+            <!-- drinks -->              
+              <div class="product col bg-success d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="mojito" src="https://images.unsplash.com/photo-1551782450-3939704166fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bW9qaXRvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="photo of double room">
+                <h4>Mojito</h4>
+                <p>30€</p>
+                <button class="btn btn-light w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(mojito)">Add</button>
+              </div>
+              <div class="product col bg-success d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="coke" src="https://images.unsplash.com/photo-1627260110809-df22a915242b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNvY2ElMjBjb2xhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="photo of double room">
+                <h4>Coke</h4>
+                <p>30€</p>
+                <button class="btn btn-light w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(coke)">Add</button>
+              </div>
+              <div class="product col bg-success d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="water" src="https://images.unsplash.com/photo-1616556425595-93db848a50c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGdsYXNzJTIwb2YlMjB3YXRlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="photo of double room">
+                <h4>Water</h4>
+                <p>30€</p>
+                <button class="btn btn-light w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(water)">Add</button>
+              </div>
+            <!-- dessert -->
+              <div class="product col bg-success d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="pie" src="https://images.unsplash.com/photo-1508736375612-66c03035c629?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzB8fHN0cmF3YmVycnklMjBwaWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="photo of double room">
+                <h4>Fruit Pie</h4>
+                <p>50€</p>
+                <button class="btn btn-light w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(pie)">Add</button>
+              </div>
+              <div class="product col bg-success d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="cake" src="https://images.unsplash.com/photo-1626263468007-a9e0cf83f1ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y2hvY29sYXRlJTIwY2FrZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="photo of double room">
+                <h4>Cake</h4>
+                <p>50€</p>
+                <button class="btn btn-light w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(cake)">Add</button>
+              </div>
+              <div class="product col bg-success d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="ice" src="https://images.unsplash.com/photo-1629385701021-fcd568a743e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGljZSUyMGNyZWFtfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="photo of double room">
+                <h4>Ice</h4>
+                <p>50€</p>
+                <button class="btn btn-light w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(ice)">Add</button>
+              </div>
+        </div>
       </div>
+      <br>
+      <hr>
+
+
+      <!-- (3) SPA #anchor3 -->
+      <!-- ************************************************* -->
+      <h2 id="anchor3" class="text-center">SPA</h2>
+      <div class="border border-danger border-3 container rounded text-center">
+        <p>Please choose your room(s)</p>
+        <div class="row">
+            <div class="product col bg-success d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="day" src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGF5JTIwc3BhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="photo of double room">
+                <h4>Day-spa</h4>
+                <p>800€</p>
+                <button class="btn btn-light w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(day)">Add</button>
+            </div>
+
+            <div class="col bg-success d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="stay" src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3BhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="photo of triple room">
+                <h4>Stay-spa/1 day</h4>
+                <p>1500€</p>
+                <button class="btn btn-light w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(stay)">Add</button>
+            </div>
+
+            <div class="col bg-success d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="medical" src="https://images.unsplash.com/photo-1492552181161-62217fc3076d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTV8fHNwYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="photo of quadruple room">
+                <h4>Medical-spa/1 day</h4>
+                <p>3000€</p>
+                <button class="btn btn-light w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(medical)">Add</button>
+            </div>
+        </div>
+      </div>
+      <br>
+      <hr>
     </main>
 
+    
+    <!-- **************************************** -->
+    <footer class="container-fluid text-center fw-bold">
+      <h2>FOOTER</h2>
+      <div class="row">
+          <div class="col-lg-6 bg-danger">footer A</div>
+          <div class="col-lg-6 bg-warning">footer B</div>
+      </div>
+      <div class="row">
+          <div class="col-xl-4 bg-success">FOOTER (1)</div>
+          <div class="col-xl-4 bg-info">FOOTER (2)</div>
+          <div class="col-xl-4 bg-success">FOOTER (3)</div>
+      </div>
+    </footer>
 
-
-    <footer></footer>
-    <script src="js/script.js"></script>
+    <script src="js/en.js"></script>
   </body>
 </html>
