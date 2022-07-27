@@ -18,6 +18,24 @@ body {
 h1, h2 {
     font-weight: bold;
 }
+i a {
+    list-style-type: none;
+    font-size: 30px;
+}
+p a {
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(62, 61, 61);
+    font-size: 20px;
+}
+p a:hover {
+    font-size: 23px;
+    color: #00963e;
+    transition: transform 1s ease-in-out;
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
 
 
 /* HEADER */
@@ -32,10 +50,10 @@ header, section {
     width: 55%;
     border-radius: 12px;
 }
-#menu {
+.MENU {
     width: 65%;
 }
-.menu {
+.MENU {
     width: 40%;
 }
 .MENU > div:nth-child(1) {
@@ -55,9 +73,6 @@ header, section {
     line-height: 100%;
 }
 
-.white {
-    color: white;
-}
 #print-button {
 	display: none;
 }
@@ -85,6 +100,49 @@ header, section {
     margin: 2%;
 }
 
+/* ---------------------------------------- */
+/* EFFETS PARALLAX */
+#parallax {
+    height: 50vh;
+    background: url(../img/code.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+}
+
+
+/* REVIEWS */
+/* ---------------------------------------- */
+.etoile-div i {
+    color: #e8c60a;
+}
+img {
+    width: 100px;
+}
+.re {
+    opacity: 0.8;
+    color: black;
+}
+
+
+/* NEWS */
+/* ---------------------------------------- */
+.news {
+    background-image: url("https://images.unsplash.com/photo-1546085020-407431a34851?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjJ8fG5ld3NwYXBlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+}
+.news p a, .news p h2 {
+    color: white;
+    font-weight: bold;
+}
+.news2 {
+    background-color: #5f582f20;
+    border-radius: 12px;
+}
+
 .attribution {
     color: white;
 }
@@ -97,7 +155,6 @@ header, section {
     font-size: 18px;
     transform: 2s ease-in-out;
 }
-
 /* FOOTER */
 /* -------------------------------------------------- */
 footer {

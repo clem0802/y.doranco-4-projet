@@ -117,20 +117,13 @@ function showTotal() {
         for (let i = 0; i<cartItems.length; i++) {
             total += cartItems[i].price;
         }
-        orderTotal.innerHTML += "TOTAL : " + total + "€, FICTIVE BOOKING.";
+        orderTotal.innerHTML += "TOTAL: " + total + "€, this is a fictive purchase.";
     }
 }
 
 
 
 
-// delete (reset) button
+// TEST
 // ---------------------------------------------
-// https://www.codegrepper.com/code-examples/javascript/localstorage+clear+item
-// https://www.tutorialspoint.com/html-dom-local-storage-clear-method
-// https://www.geeksforgeeks.org/html-dom-local-storage-clear-method/
-
-// var showTotal = document.getElementById("showTotal");
-// function deleteCart() {
-//     localStorage.removeItem("showTotal");
-// }
+// ---------------------------------------------

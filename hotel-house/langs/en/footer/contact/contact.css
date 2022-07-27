@@ -18,7 +18,13 @@ body {
 h1, h2 {
     font-weight: bold;
 }
-
+a i {
+    list-style-type: none;
+    font-size: 25px;
+}
+img {
+    width: 80px;
+}
 
 /* HEADER */
 /* -------------------------------------------------- */
@@ -32,7 +38,7 @@ header, section {
     width: 55%;
     border-radius: 12px;
 }
-#menu {
+.MENU {
     width: 65%;
 }
 .menu {
@@ -40,7 +46,6 @@ header, section {
 }
 .MENU > div:nth-child(1) {
     background-color: #e7c6b55f;
-    line-height: 100%;
 }
 .MENU > div:nth-child(2) {
     background-color: #9492925f;
@@ -54,11 +59,12 @@ header, section {
     background-color: #9492925f;
     line-height: 100%;
 }
-
-.white {
-    color: white;
+.MENU > div:nth-child(5) {
+    background-color: #e7c6b55f;
+    line-height: 100%;
 }
-#print-button {
+
+#print-button1, #print-button2 {
 	display: none;
 }
 
@@ -80,11 +86,10 @@ header, section {
 /* MAIN */
 /* -------------------------------------------------- */
 .bloc {
-    background-color: rgba(255, 255, 255, 0.442);
+    background-color: rgb(200,200,200);
     width: 46%;
     margin: 2%;
 }
-
 .attribution {
     color: white;
 }
@@ -92,7 +97,7 @@ header, section {
     color: yellow;
 }
 .attribution a:hover {
-    color: rgb(83, 85, 83);
+    color: orange;
     font-weight: bold;
     font-size: 18px;
     transform: 2s ease-in-out;
@@ -117,4 +122,63 @@ footer {
     background-color: #9492925f;
     line-height: 100%;
     border-radius: 12px;
+}
+.btn {
+    background-color: #3a37375f;
+    color: white;
+}
+.btn:hover {
+    font-weight: bold;
+    background-color: rgb(44, 164, 7);
+    color: rgb(76, 74, 74);
+    border: none;
+}
+
+
+/* CONTACT */
+/* -------------------------------------------- */
+.contact {
+    /* background-image: url("https://images.unsplash.com/photo-1493219686142-5a8641badc78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8d3JpdGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: rgba(255, 255, 255, 0.442);
+}
+.form {
+    background-color: #eedb9d63;
+    padding: 10px;
+}
+
+
+/* NEWSLETTER */
+/* -------------------------------------------- */
+.news-container {
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+  
+  /* Style the input elements and the submit button */
+input[type=text], input[type=submit], input[type=number], input[type=email] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+  
+  /* Add margins to the checkbox */
+input[type=checkbox] {
+    margin-top: 16px;
+}
+  
+  /* Style the submit button */
+input[type=submit] {
+    background-color: #1eb7356f;
+    color: rgb(113, 111, 111);
+    font-weight: bold;
+    border: none;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
 }
