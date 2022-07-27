@@ -5,11 +5,15 @@
 }
 
 body {
-    background-color: rgb(100,100,100);
     color: #4b4a4a;
     font-family: 'Bebas Neue', cursive;
     font-family: 'Outfit', sans-serif;
     font-family: 'Roboto', sans-serif;
+
+    background-image: url("https://images.unsplash.com/photo-1579532648866-611dbe281eeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fHBpbmslMjByb3Nlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 h1, h2 {
     font-weight: bold;
@@ -34,21 +38,25 @@ header, section {
 .menu {
     width: 40%;
 }
-#menu > div:nth-child(1) {
-    background-color: #32CD32;
+.MENU > div:nth-child(1) {
+    background-color: #e7c6b55f;
     line-height: 100%;
 }
-#menu > div:nth-child(2) {
-    background-color: #9ACD32;
+.MENU > div:nth-child(2) {
+    background-color: #9492925f;
     line-height: 100%;
 }
-#menu > div:nth-child(3) {
-    background-color: #32CD32;
+.MENU > div:nth-child(3) {
+    background-color: #e7c6b55f;
     line-height: 100%;
 }
-#menu > div:nth-child(4) {
-    background-color: #9ACD32;
+.MENU > div:nth-child(4) {
+    background-color: #9492925f;
     line-height: 100%;
+}
+
+.white {
+    color: white;
 }
 #print-button {
 	display: none;
@@ -57,7 +65,7 @@ header, section {
 .back {
     padding: 10px;
     text-decoration: none;
-    color: rgb(2, 115, 2);
+    color: rgb(83, 85, 83);
     font-size: 18px;
 }
 .back:hover {
@@ -72,7 +80,7 @@ header, section {
 /* MAIN */
 /* -------------------------------------------------- */
 .bloc {
-    background-color: rgb(200,200,200);
+    background-color: rgba(255, 255, 255, 0.442);
     width: 46%;
     margin: 2%;
 }
@@ -84,7 +92,7 @@ header, section {
     color: yellow;
 }
 .attribution a:hover {
-    color: orange;
+    color: rgb(83, 85, 83);
     font-weight: bold;
     font-size: 18px;
     transform: 2s ease-in-out;
@@ -93,20 +101,20 @@ header, section {
 /* FOOTER */
 /* -------------------------------------------------- */
 footer {
-    background-color: #228B22;
+    background-color: rgba(255, 255, 255, 0.442);
 }
 .footer-container {
     width: 90%;
 }
 .footer1 {
     height: 80px;
-    background-color: #32CD32;
+    background-color: #e7c6b55f;
     line-height: 100%;
     border-radius: 12px;
 }
 .footer2 {
     height: 80px;
-    background-color: #9ACD32;
+    background-color: #9492925f;
     line-height: 100%;
     border-radius: 12px;
 }
