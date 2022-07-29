@@ -1,10 +1,6 @@
 
-let cartItems = []; // an empty ARRAY
-
 // ROOMS
 // -------------------------------------------
-let isTotalHidden = true;
-
 let double = { // an OBJECT
     name: "Double-classic",
     price: 800
@@ -15,7 +11,7 @@ let triple = {
 }
 let quadruple = {
     name: "Quadruple-family",
-    price: 1200
+    price: 1400
 }
 
 // FOOD
@@ -94,8 +90,14 @@ let medical = {
 }
 
 
-
+// CART
 // ---------------------------------------------
+// ---------------------------------------------
+let cartItems = []; // an empty ARRAY
+let isTotalHidden = true;
+let historyContainer = document.getElementById("itemCounter");
+
+
 function addToCart(item) {
     cartItems.push(item);
     document.getElementById("itemCounter").innerHTML = cartItems.length; //!
@@ -107,7 +109,6 @@ function clickCart() {
     showTotal();
 }
 
-// ---------------------------------------------
 function showTotal() {
     let orderTotal = document.getElementById("orderTotal");
     orderTotal.innerHTML = "";
@@ -121,16 +122,14 @@ function showTotal() {
     }
 }
 
+// RESET btn
+// let newNumber = document.createElement("h5");
+// newNumber.innerHTML = orderTotal.value;
+// newNumber.setAttribute("id", "search");
+// historyContainer.appendChild(newNumber);
+// orderTotal.value = " ";
 
-
-
-// delete (reset) button
-// ---------------------------------------------
-// https://www.codegrepper.com/code-examples/javascript/localstorage+clear+item
-// https://www.tutorialspoint.com/html-dom-local-storage-clear-method
-// https://www.geeksforgeeks.org/html-dom-local-storage-clear-method/
-
-// var showTotal = document.getElementById("showTotal");
-// function deleteCart() {
-//     localStorage.removeItem("showTotal");
+// function resetCart(){
+//     let reset = document.getElementById("search");
+//     historyContainer.removeChild(reset);
 // }

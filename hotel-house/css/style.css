@@ -18,7 +18,8 @@ body {
 
 /* --------------------------------- */
 header {
-    padding-top: 15px;
+    padding-top: 8px;
+    margin: 0 auto 5px;
 }
 nav {
     width: 100%;
@@ -97,7 +98,7 @@ nav {
 .container-fluid {
     background-color: #ecf0f1;
     width: 300px;
-    padding: 3%;
+    padding: 2%;
     border-radius: 12px;
 }
 h2 {
@@ -113,6 +114,20 @@ h4 {
     height: auto !important;
     margin-top: 15px;
 }
+h4 a {
+    color: hsl(217, 8%, 38%); 
+    font-weight: bold;
+}
+h4 a:hover {
+    transition: transform 3s ease-in-out;
+    font-size: 27px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: #3a820d .3s ease-in-out, box-shadow .3s ease-in-out;
+    color: #3a820d;
+}
+
+
 .attribution {
     font-size: 10px;
 }
@@ -160,12 +175,9 @@ footer {
     background-color: #3498db;
 }
 
-
-
 #print-button {
 	display: none;
 }
-
 i {
     transition: transform 1s ease-in-out;
     color: white;
@@ -176,27 +188,64 @@ i:hover {
 
 
 
+
 /* COOKIES */
-/* ---------------------------------------------- */
-#cookiePopup {
-    background: white;
-    width: 25%;
-    position: fixed;
-    left: 10px;
-    bottom: 20px;
-    box-shadow: 0px 0px 15px #cccccc;
-    padding: 5px 10px;
-  }
-    #cookiePopup p{
-    text-align: left;
-    font-size: 15px;
-    color: #4e4e4e;
-  }
-  #cookiePopup button{
+/* -------------------------------------- */
+.cookies {
+    font-size: 12px;
+    background-color: #d6ebd9;
+    /* position: fixed; */
+    bottom: 50px;
+    left: 50px;
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    border: navajowhite;
-    background: #097fb7;
-    padding: 5px;
-    border-radius: 10px;
-    color: white;
-  }
+    padding: 0;
+    color: #444;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(1, 1, 1, 0.242);
+}
+.message {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    border-right: 1px solid #eee;
+}
+.compliance {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    flex: 1 0 auto;
+    align-items: center;
+}
+.choice {
+    font-size: 11px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.4s;
+    /* color: #888; */
+    color: black;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.choice:first-child {
+    border-bottom: 1px solid #eee;
+    border-top-right-radius: 5px;
+}
+.choice:last-child {
+    border-bottom-right-radius: 5px;
+}
+.choice:hover {
+    background: #82b960;
+}
+
+/* --------------------------- (my test) */
+.cookies.show {
+    display: block;
+}
+.cookies.hide {
+    display: none;
+}

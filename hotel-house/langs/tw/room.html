@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>2022.07.25 | Projet (HotelHouse - TW - rooms)</title>
+    <meta name="description" content="Projet (HotelHouse - TW - rooms)">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"
+    /> 
+    <link rel="stylesheet" href="css/tw.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Outfit" rel="stylesheet">
+  </head>
+
+  
+  <body class="">
+    <header class="d-flex flex-column justify-content-center align-items-center">
+      <div class="header-container container-fluid border border-secondary border-3 text-center fw-bold">
+          <div>
+              <!-- LOGO + CART -->
+              <!-- ************************************************* -->
+
+                <div class="row">
+                <!-- Logo -->
+                  <div class="">
+                    <img class="logo mx-0" src="img/logo.png" alt="hotel-house logo image" title="welcome to hotel-house at home">
+                  </div>
+
+                  <!-- Cart -->
+                  <div class="cart text-center rounded p-3">
+                    <h2>您的購物籃</h2>
+                    <img id="basketImage" alt="icon of a cart" src="https://mimo.app/r/cart.png" onclick="clickCart()">
+                    <h3 id="itemCounter">0</h3>
+                    <h5 id="orderTotal" class="fw-bold">結算</h5>
+                    <button id="showTotal" type="submit" class="btn btn-success" onclick="clickCart()">查總額</button>
+                  </div><hr>
+              </div>
+          </div>
+
+          <!-- NAVBARS -->
+          <nav class="row">
+              <div class="col-sm-2 p-3"><a href="#anchor1" class="text-decoration-none">房間</a></div>
+              <div class="col-sm-2 p-3"><a href="resto.html" target="_blank">餐廳</a></div>
+              <div class="col-sm-2 p-3"><a href="spa.html" target="_blank">水療</a></div>
+              <div class="col-sm-2 p-3"><a href="footer/locate/locate.html" target="_blank">找到我們</a></div>
+              <div class="col-sm-2 p-3"><a href="footer/follow/follow.html" target="_blank">追蹤我們</a>
+              </div>
+              <div class="col-sm-2 p-3"><a href="javascript:window.print()" class="">列印</a>
+              </div>
+          </nav>
+      </div><br>
+    </header>
+
+
+      <!-- ************************************************* -->
+    <main>
+
+      <!-- HotelHouse Intro - rooms -->
+      <div class="hotel-house container p-5 rounded">
+        <div class="m-3 hotel-intro p-3 fs-5 text-center">
+          <h1 class="text-center">HOTEL-HOUSE<br>房間</h1><br>
+          <p class="fs-4 fw-bold">我們知道您來到烏托邦大湖時有很多選擇,很高興您選擇了Hotel-House。我們希望您帶著冒險的心情來到這裡,並留下您在被當地人稱為“地球上最甜蜜的地方”的 Grand Lake 的美好回憶。<br>
+          沒有參觀綠夢森林，烏托邦大湖之旅就不算完整。 Green Dream 停車場是停車的最佳地點——確保您在上午 10 點之前到達那里以避開人群。請查看我們的 3 種類型的房間，如有任何需要，請隨時致電前台：針線包、肥皂、更多毛巾、洗髮水……我們很高興將所有這些帶到您的房間。</p>
+          
+        </div>
+      </div>
+      <br>
+      <hr>
+      <!-- ************************************************* -->
+
+  <!-- (1) Rooms #anchor1 -->
+  <div class="anchor1 container-fluid rounded text-center w-75">
+    <!-- ROOMS -->
+
+        <!-- (1) ROOMS #anchor1 -->
+        <!-- ************************************************* -->
+        <h2 id="anchor1" class="text-center m-3">我們的房間</h2>
+        <div class="border container rounded text-center">
+            <div class="row row-card">
+                <div class=" border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                    <img class="img-fluid" id="double" src="https://images.unsplash.com/photo-1590490359854-dfba19688d70?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGhvdGVsJTIwcm9vbXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="photo of double room">
+                    <h4>經典雙人房</h4>
+                    <p>800€歐元</p>
+                    <button class="btn btn-success w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(double)">預訂</button>
+                    <p>免費無線網絡連接、浴室和衛生間、免費和額外的枕頭、免費和額外的毛巾、牙刷、牙膏、牙籤、洗髮水、洗髮後、潤膚露、空調、電視、免費瓶裝水，熱水壺，咖啡和茶包，晨鈴。我們接受各種付款方式：信用卡、現金、支票…… </p>
+                    <p>含烏托邦境內免費電話，免費早餐</p>
+                </div>
+
+                <div class="border col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                    <img class="img-fluid" src="https://images.unsplash.com/photo-1602002418082-a4443e081dd1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nzl8fGhvdGVsJTIwcm9vbXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="photo of triple room">
+                    <h4>舒適三人房</h4>
+                    <p>1000€歐元</p>
+                    <button class="btn btn-success w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(triple)">預訂</button>
+                    <p>免費無線網絡連接、浴室和衛生間、免費和額外的枕頭、免費和額外的毛巾、牙刷、牙膏、牙籤、洗髮水、洗髮後、潤膚露、空調、電視、免費瓶裝水，熱水壺，咖啡和茶包，晨鈴。我們接受各種付款方式：信用卡、現金、支票…… </p>
+                    <p>含烏托邦境內免費電話，免費早餐和中午（小酒館）菜單</p>
+                </div>
+
+                <div class=" border col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                    <img class="img-fluid" src="https://images.unsplash.com/photo-1594130139005-3f0c0f0e7c5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTI5fHxob3RlbCUyMHJvb218ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="photo of quadruple room">
+                    <h4>家庭四人套房</h4>
+                    <p>1400€歐元</p>
+                    <button class="btn btn-success w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(quadruple)">預訂</button>
+                    <p>免費無線網絡連接、浴室和衛生間、免費和額外的枕頭、免費和額外的毛巾、牙刷、牙膏、牙籤、洗髮水、洗髮後、潤膚露、空調、電視、免費瓶裝水，熱水壺，咖啡和茶包，晨鈴。我們接受各種付款方式：信用卡、現金、支票…… </p>
+                    <p>含烏托邦境內免費電話，免費早餐，晚餐菜單</p>
+                </div>
+            </div>
+        </div>
+  </div><br>
+    
+
+    <!-- 5 ICONS -->
+    <div class="container-fluid row text-center font justify-content-center mx-0">
+      <!-- Law GDPR-->
+      <div class="icon-container d-flex justify-content-center align-items-center p-1">
+          <a target="_blank" href="footer/law/law.html">
+            <i class="fa-solid fa-scale-balanced"></i>
+          </a>
+      </div>
+
+      <!-- Locate -->
+      <div class="icon-container d-flex justify-content-center align-items-center p-1">
+        <a target="_blank" href="footer/locate/locate.html">
+          <i class="fa-solid fa-location-dot"></i>
+        </a>
+      </div>
+
+      <!-- Contact -->
+      <div class="icon-container d-flex justify-content-center align-items-center p-1">
+        <a target="_blank" href="footer/contact/contact.html">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+      
+      <!-- Follow -->
+      <div class="icon-container d-flex justify-content-center align-items-center p-1">
+        <a target="_blank" href="footer/follow/follow.html">
+          <i class="fa-solid fa-share-from-square"></i>
+        </a>
+      </div>
+
+      <!-- Reviews -->
+      <div class="icon-container d-flex justify-content-center align-items-center p-2">
+        <a target="_blank" href="footer/review/review.html">
+          <i class="fa-solid fa-comment"></i>
+        </a>
+      </div>
+    </div><br>
+
+
+    <!-- Attributions -->
+    <div class="attribution text-center">
+      Hotel-House 作品練習<br>
+      程式書寫 <a target="_blank" href="https://portfolio-clemence.netlify.app">Clémence TAN</a>
+      <p>&copy; Copyright 版權 2022 - 版權所有</p>
+    </div>
+
+</main>
+
+    <!-- **************************************** -->
+    <footer class="container-fluid text-center fw-bold">
+      <div class="row container-fluid d-flex justify-content-center align-items-center flex-xxl-row flex-xl-row flex-lg-row flex-md-column flex-sm-column flex-column">
+
+        <div class="footer1 col back d-flex justify-content-center align-items-center m-2 w-50">
+            <a href="../../index.html" target="_blank" class="back fw-bold text-center">Home Page</a>
+        </div>
+        <div class="footer2 col back d-flex justify-content-center align-items-center w-50 m-2 w-50">
+            <a href="../../langs/en/en.html" target="_blank" class="back fw-bold text-center">English Page</a>
+        </div>
+        <div class="footer1 col back d-flex justify-content-center align-items-center w-50 m-2 w-50">
+            <a href="../../langs/fr/fr.html" target="_blank" class="back fw-bold text-center">page française</a>
+        </div>
+        <div class="footer2 col back d-flex justify-content-center align-items-center w-50 m-2 w-50">
+            <a href="../../langs/tw/tw.html" target="_blank" class="back fw-bold text-center">回繁中主頁</a>
+        </div>
+        <div class="footer1 col back d-flex justify-content-center align-items-center w-50 m-2 w-50">
+            <a href="../../langs/ch/ch.html" target="_blank" class="back fw-bold text-center">回简中主页</a>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="js/tw.js"></script>
+  </body>
+</html>

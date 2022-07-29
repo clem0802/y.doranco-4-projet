@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>2022.07.25 | Projet (HotelHouse - CH - spa)</title>
+    <meta name="description" content="Projet (HotelHouse - CH -spa">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"
+    /> 
+    <link rel="stylesheet" href="css/ch.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Outfit" rel="stylesheet">
+  </head>
+
+  
+  <body class="">
+    <header class="d-flex flex-column justify-content-center align-items-center">
+      <div class="header-container container-fluid border border-secondary border-3 text-center fw-bold">
+          <div>
+              <!-- LOGO + CART -->
+              <!-- ************************************************* -->
+
+                <div class="row">
+                <!-- Logo -->
+                  <div class="">
+                    <img class="logo mx-0" src="img/logo.png" alt="hotel-house logo image" title="welcome to hotel-house at home">
+                  </div>
+
+                  <!-- Cart -->
+                  <div class="cart text-center rounded p-3">
+                    <h2>您的购物篮</h2>
+                    <img id="basketImage" alt="icon of a cart" src="https://mimo.app/r/cart.png" onclick="clickCart()">
+                    <h3 id="itemCounter">0</h3>
+                    <h5 id="orderTotal" class="fw-bold">结算</h5>
+                    <button id="showTotal" type="submit" class="btn btn-success" onclick="clickCart()">查总额</button>
+                  </div><hr>
+              </div>
+          </div>
+
+          <!-- NAVBARS -->
+          <nav class="row">
+              <div class="col-sm-2 p-3"><a href="room.html" class="text-decoration-none" target="_blank">房间</a></div>
+              <div class="col-sm-2 p-3"><a href="resto.html" target="_blank">餐厅</a></div>
+              <div class="col-sm-2 p-3"><a href="#anchor3">水疗</a></div>
+              <div class="col-sm-2 p-3"><a target="_blank" href="footer/locate/locate.html">找到我们</a></div>
+              <div class="col-sm-2 p-3"><a target="_blank" href="footer/follow/follow.html">追踪我们</a>
+              </div>
+              <div class="col-sm-2 p-3"><a href="javascript:window.print()" class="">列印</a>
+              </div>
+          </nav>
+      </div><br>
+    </header>
+
+
+      <!-- ************************************************* -->
+    <main>
+
+      <!-- HotelHouse Intro - spa -->
+      <div class="hotel-house container p-5 rounded">
+        <div class="m-3 hotel-intro p-3 fs-5 text-center">
+          <h1 class="text-center">HOTEL-HOUSE<br>水疗</h1><br>
+          <p class="fs-4 fw-bold">寻找酒店水疗中心以放松身心并享受放松的治疗？ “Hotel-House 水疗” 酒店在这里帮助您摆脱忙碌的日常生活,暂停时间的流逝,沉迷于丰富的世界,并为您提供豪华的水疗休息。在世界各地,“Hotel-House 水疗” 重视感官及放松,满足您的选择标准,为您提供有助个人灵感启发的幸福理念。环境、建筑、装饰、灯光、声音和气味。
+          </p>
+        </div>
+      </div>
+      <br>
+      <hr>
+      <!-- ************************************************* -->
+
+
+
+      <!-- (3) Spa #anchor3 -->
+      <div id="anchor3" class="anchor3 container-fluid rounded text-center w-75">
+            <!-- spa -->
+            <div class="border container rounded text-center">
+              <h2>我们的水疗</h2>
+              <div class="row row-card">
+                <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                    <img class="img-fluid" id="day" src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGF5JTIwc3BhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="photo of double room">
+                    <h4>Pleasure 欢乐-水疗</h4>
+                    <p>800€欧元</p>
+                    <button class="btn btn-warning w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(pleasure)">预订</button>
+                    <p>1 位美容师, 45 分钟难忘护理，无需携带任何额外产品，我们都已做好准备。</p>
+                </div>
+      
+                <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                    <img class="img-fluid" id="stay" src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3BhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="photo of triple room">
+                    <h4>Relaxing 放松-水疗</h4>
+                    <p>1500€欧元</p>
+                    <button class="btn btn-warning w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(relaxing)">预订</button>
+                    <p>1 小时半 1 位美容师的水疗疗程，免提供 1 杯软饮料和 1 次基本皮肤科咨询</p>
+                </div>
+      
+                <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                    <img class="img-fluid" id="medical" src="https://images.unsplash.com/photo-1492552181161-62217fc3076d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTV8fHNwYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="photo of quadruple room">
+                    <h4>Medical 非常放松-水疗</h4>
+                    <p>3000€欧元</p>
+                    <button class="btn btn-warning w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(medical)">预订</button>
+                    <p>2小时的时间,在两位专业美容师的陪伴下,将使用额外的医疗产品,提供1次皮肤科咨询。</p>
+                </div>
+            </div>
+            </div>
+
+      </div><br>
+    </main>
+
+
+
+
+    <!-- 5 ICONS -->
+    <div class="container-fluid row text-center font justify-content-center mx-0">
+      <!-- Law GDPR-->
+      <div class="icon-container d-flex justify-content-center align-items-center p-1">
+          <a target="_blank" href="footer/law/law.html">
+            <i class="fa-solid fa-scale-balanced"></i>
+          </a>
+      </div>
+
+      <!-- Locate -->
+      <div class="icon-container d-flex justify-content-center align-items-center p-1">
+        <a target="_blank" href="footer/locate/locate.html">
+          <i class="fa-solid fa-location-dot"></i>
+        </a>
+      </div>
+
+      <!-- Contact -->
+      <div class="icon-container d-flex justify-content-center align-items-center p-1">
+        <a target="_blank" href="footer/contact/contact.html">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+      
+      <!-- Follow -->
+      <div class="icon-container d-flex justify-content-center align-items-center p-1">
+        <a target="_blank" href="footer/follow/follow.html">
+          <i class="fa-solid fa-share-from-square"></i>
+        </a>
+      </div>
+
+      <!-- Reviews -->
+      <div class="icon-container d-flex justify-content-center align-items-center p-2">
+        <a target="_blank" href="footer/review/review.html">
+          <i class="fa-solid fa-comment"></i>
+        </a>
+      </div>
+    </div><br>
+
+
+
+        <!-- Attributions -->
+        <div class="attribution text-center">
+          Hotel-House 作品练习<br>
+          程式书写 <a target="_blank" href="https://portfolio-clemence.netlify.app">Clémence TAN</a>
+          <p>&copy; Copyright 版权 2022 - 版权所有</p>
+        </div>
+
+
+
+
+
+
+    <!-- **************************************** -->
+    <footer class="container-fluid text-center fw-bold">
+      <div class="row container-fluid d-flex justify-content-center align-items-center flex-xxl-row flex-xl-row flex-lg-row flex-md-column flex-sm-column flex-column">
+
+        <div class="footer1 col back d-flex justify-content-center align-items-center m-2 w-50">
+            <a href="../../index.html" class="back fw-bold text-center" target="_blank">Home Page</a>
+        </div>
+        <div class="footer2 col back d-flex justify-content-center align-items-center w-50 m-2 w-50">
+            <a href="../../langs/en/en.html" class="back fw-bold text-center" target="_blank">English Page</a>
+        </div>
+        <div class="footer1 col back d-flex justify-content-center align-items-center w-50 m-2 w-50">
+            <a href="../../langs/fr/fr.html" class="back fw-bold text-center" target="_blank">page française</a>
+        </div>
+        <div class="footer2 col back d-flex justify-content-center align-items-center w-50 m-2 w-50">
+            <a href="../../langs/tw/tw.html" class="back fw-bold text-center" target="_blank">回繁中主頁</a>
+        </div>
+        <div class="footer1 col back d-flex justify-content-center align-items-center w-50 m-2 w-50">
+            <a href="../../langs/ch/ch.html" class="back fw-bold text-center" target="_blank">回简中主页</a>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="js/ch.js"></script>
+  </body>
+</html>

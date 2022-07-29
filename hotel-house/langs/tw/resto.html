@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>2022.07.25 | Projet (HotelHouse - TW - resto)</title>
+    <meta name="description" content="Projet (HotelHouse - TW - resto)">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"
+    /> 
+    <link rel="stylesheet" href="css/tw.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Outfit" rel="stylesheet">
+  </head>
+
+  
+  <body class="">
+    <header class="d-flex flex-column justify-content-center align-items-center">
+      <div class="header-container container-fluid border border-secondary border-3 text-center fw-bold">
+          <div>
+              <!-- LOGO + CART -->
+              <!-- ************************************************* -->
+
+                <div class="row">
+                <!-- Logo -->
+                  <div class="">
+                    <img class="logo mx-0" src="img/logo.png" alt="hotel-house logo image" title="welcome to hotel-house at home">
+                  </div>
+
+                  <!-- Cart -->
+                  <div class="cart text-center rounded p-3">
+                    <h2>您的購物籃</h2>
+                    <img id="basketImage" alt="icon of a cart" src="https://mimo.app/r/cart.png" onclick="clickCart()">
+                    <h3 id="itemCounter">0</h3>
+                    <h5 id="orderTotal" class="fw-bold">結算</h5>
+                    <button id="showTotal" type="submit" class="btn btn-success" onclick="clickCart()">查總額</button>
+                  </div><hr>
+              </div>
+          </div>
+
+          <!-- NAVBARS -->
+          <nav class="row">
+              <div class="col-sm-2 p-3"><a href="room.html" class="text-decoration-none" target="_blank">房間</a></div>
+              <div class="col-sm-2 p-3"><a href="#anchor2">餐廳</a></div>
+              <div class="col-sm-2 p-3"><a href="spa.html" target="_blank">水療</a></div>
+              <div class="col-sm-2 p-3"><a href="footer/locate/locate.html" target="_blank">找到我們</a></div>
+              <div class="col-sm-2 p-3"><a href="footer/follow/follow.html" target="_blank">追蹤我們</a>
+              </div>
+              <div class="col-sm-2 p-3"><a href="javascript:window.print()" class="">列印</a>
+              </div>
+          </nav>
+      </div><br>
+    </header>
+
+
+      <!-- ************************************************* -->
+    <main>
+
+      <!-- HotelHouse Intro - resto -->
+      <div class="hotel-house container p-5 rounded">
+        <div class="m-3 hotel-intro p-3 fs-5 text-center">
+          <h1 class="text-center">HOTEL-HOUSE<br>餐廳</h1><br>
+          <p class="fs-4 fw-bold">我們的 Hotel-House 餐廳提供法式午餐特色“小酒館”- 上菜速度很快，因此請發送短信至 +(672) 12 3456 或發送電子郵件至 home@hotelhouse.com 以確保您的預訂。如果您想吃冰淇淋，一定要到街區附近的 Cony Spot 看看——他們手工攪拌的自製黃油餅乾: 是小孩子們的最愛，並在州博覽會上獲得了最佳冰淇淋獎。您甚至可以看到我們的活動總監 Georges 在泳池上午 10 點開放之前親自準備鮮榨橙汁。
+          </p>
+        </div>
+      </div>
+      <br>
+      <hr>
+      <!-- ************************************************* -->
+
+    
+
+  <!-- (2) Restaurant #anchor2 -->
+  <div id="anchor2" class="anchor2 container-fluid rounded text-center w-75">
+    <!-- food -->
+        <!-- (2) FOOD #anchor2 -->
+        <!-- ************************************************* -->
+        <h2>我們的餐廳</h2><br><hr>
+        <h4 class="text-center">中午（小酒館）菜單</h4>
+        <p class="fw-bold fs-5">我們的中午（小酒館）菜單為超過 300 歐元的賬單免費提供餡餅。
+        </p>
+        <div class="border container rounded text-center">
+          <div class="row row-card">
+              <!-- dishes -->
+                <!-- salmon -->
+                <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                  <img class="img-fluid" id="salmon" src="https://images.unsplash.com/photo-1529566745363-92b5ed5e261c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTR8fHNhbG1vbiUyMGRpc2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="photo of salmon">
+                  <h4>三文魚</h4>
+                  <p>50€歐元</p>
+                  <button class="btn btn-info w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(salmon)">
+                    預訂</button>
+                </div>
+                <!-- salad -->
+                <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                  <img class="img-fluid" id="salad" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="photo of salad">
+                  <h4>沙拉</h4>
+                  <p>50€歐元</p>
+                  <button class="btn btn-info w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(salad)">
+                    預訂</button>
+                </div>
+                <!-- chicken -->
+                <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                  <img class="img-fluid" id="chicken" src="https://images.unsplash.com/photo-1609016580259-e04ddc09a850?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fHJvYXN0ZWQlMjBjaGlja2VufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="photo of chicken">
+                  <h4>雞肉</h4>
+                  <p>50€歐元</p>
+                  <button class="btn btn-info w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(chicken)">
+                    預訂</button>
+                </div>
+              <!-- drinks -->
+                <!-- mojito -->
+                <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                  <img class="img-fluid" id="mojito" src="https://images.unsplash.com/photo-1551782450-3939704166fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bW9qaXRvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="photo of mojito">
+                  <h4>莫吉托</h4>
+                  <p>30€歐元</p>
+                  <button class="btn btn-info w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(mojito)">
+                    預訂</button>
+                </div>
+                <!-- coke -->
+                <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                  <img class="img-fluid" id="coke" src="https://images.unsplash.com/photo-1627260110809-df22a915242b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNvY2ElMjBjb2xhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="photo of coke">
+                  <h4>可樂</h4>
+                  <p>30€歐元</p>
+                  <button class="btn btn-info w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(coke)">
+                    預訂</button>
+                </div>
+                <!-- water -->
+                <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                  <img class="img-fluid" id="water" src="https://images.unsplash.com/photo-1616556425595-93db848a50c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGdsYXNzJTIwb2YlMjB3YXRlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="photo of water">
+                  <h4>水</h4>
+                  <p>30€歐元</p>
+                  <button class="btn btn-info w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(water)">
+                    預訂</button>
+                </div>
+              <!-- dessert -->
+                <!-- pie -->
+                <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                  <img class="img-fluid" id="pie" src="https://images.unsplash.com/photo-1508736375612-66c03035c629?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzB8fHN0cmF3YmVycnklMjBwaWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="photo of pie">
+                  <h4>餡餅</h4>
+                  <p>50€歐元</p>
+                  <button class="btn btn-info w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(pie)">
+                    預訂</button>
+                </div>
+                <!-- cake -->
+                <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                  <img class="img-fluid" id="cake" src="https://images.unsplash.com/photo-1626263468007-a9e0cf83f1ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y2hvY29sYXRlJTIwY2FrZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="photo of cake">
+                  <h4>蛋糕</h4>
+                  <p>50€歐元</p>
+                  <button class="btn btn-info w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(cake)">
+                    預訂</button>
+                </div>
+                <!-- ice -->
+                <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                  <img class="img-fluid" id="ice" src="https://images.unsplash.com/photo-1629385701021-fcd568a743e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGljZSUyMGNyZWFtfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="photo of ice">
+                  <h4>冰淇淋</h4>
+                  <p>50€歐元</p>
+                  <button class="btn btn-info w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(ice)">
+                    預訂</button>
+                </div>
+          </div>
+        </div><br><hr>
+
+        <h4 class="text-center">下午菜單</h4>
+        <p class="fw-bold fs-5">我們的下午菜單為超過 200 歐元的賬單免費提供 2 個冰淇淋。</p>
+        
+        <div class="border container rounded text-center">
+          <div class="row">
+            <!-- dishes -->
+              <!-- salad -->
+              <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="salad2" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="photo of salad">
+                <h4>沙拉</h4>
+                <p>50€歐元</p>
+                <button class="btn btn-info w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(salad)">預訂</button>
+              </div>
+
+            <!-- drinks -->
+              <!-- mojito -->
+              <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="mojito2" src="https://images.unsplash.com/photo-1551782450-3939704166fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bW9qaXRvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="photo of mojito">
+                <h4>莫吉托</h4>
+                <p>30€歐元</p>
+                <button class="btn btn-info w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(mojito)">預訂</button>
+              </div>
+              <!-- coke -->
+              <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="coke2" src="https://images.unsplash.com/photo-1627260110809-df22a915242b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNvY2ElMjBjb2xhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="photo of coke">
+                <h4>可樂</h4>
+                <p>30€歐元</p>
+                <button class="btn btn-info w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(coke)">預訂</button>
+              </div>
+              <!-- water -->
+              <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="water2" src="https://images.unsplash.com/photo-1616556425595-93db848a50c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGdsYXNzJTIwb2YlMjB3YXRlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="photo of coke">
+                <h4>水</h4>
+                <p>30€歐元</p>
+                <button class="btn btn-info w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(water)">預訂</button>
+              </div>
+              <!-- coffee -->
+              <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="coffee2" src="https://images.unsplash.com/photo-1459755486867-b55449bb39ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fGNvZmZlZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="photo of coffee">
+                <h4>咖啡</h4>
+                <p>30€歐元</p>
+                <button class="btn btn-info w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(coffee)">預訂</button>
+              </div>
+              <!-- tea -->
+              <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="tea2" src="https://images.unsplash.com/photo-1612706965205-7570f423e339?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njd8fHRlYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="photo of tea">
+                <h4>茶</h4>
+                <p>30€歐元</p>
+                <button class="btn btn-info w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(tea)">預訂</button>
+              </div>
+              
+            <!-- dessert -->
+              <!-- pie -->
+              <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="pie2" src="https://images.unsplash.com/photo-1508736375612-66c03035c629?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzB8fHN0cmF3YmVycnklMjBwaWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="photo of pie">
+                <h4>餡餅</h4>
+                <p>50€歐元</p>
+                <button class="btn btn-info w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(pie)">預訂</button>
+              </div>
+              <!-- cake -->
+              <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="cake2" src="https://images.unsplash.com/photo-1626263468007-a9e0cf83f1ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y2hvY29sYXRlJTIwY2FrZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="photo of cake">
+                <h4>蛋糕</h4>
+                <p>50€歐元</p>
+                <button class="btn btn-info w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(cake)">預訂</button>
+              </div>
+              <!-- ice -->
+              <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="ice2" src="https://images.unsplash.com/photo-1629385701021-fcd568a743e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGljZSUyMGNyZWFtfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="photo of ice">
+                <h4>冰淇淋</h4>
+                <p>50€歐元</p>
+                <button class="btn btn-info w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(ice)">預訂</button>
+              </div>
+          </div>
+        </div><br><hr>
+
+        <h4 class="text-center">晚間菜單</h4>
+        <p class="fw-bold fs-5">我們的晚間菜單為超過 400 歐元的賬單免費提供蛋糕和莫吉托。</p>
+        <div class="border container rounded text-center">
+          <div class="row">
+            <!-- dishes -->
+              <!-- salmon -->
+              <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="salmon3" src="https://images.unsplash.com/photo-1529566745363-92b5ed5e261c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTR8fHNhbG1vbiUyMGRpc2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="photo of salmon">
+                <h4>三文魚</h4>
+                <p>50€歐元</p>
+                <button class="btn btn-info w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(salmon)">預訂</button>
+              </div>
+              <!-- salad -->
+              <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="salad3" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="photo of salad">
+                <h4>沙拉</h4>
+                <p>50€歐元</p>
+                <button class="btn btn-info w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(salad)">預訂</button>
+              </div>
+              <!-- chicken -->
+              <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="chicken3" src="https://images.unsplash.com/photo-1609016580259-e04ddc09a850?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fHJvYXN0ZWQlMjBjaGlja2VufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="photo of chicken">
+                <h4>雞肉</h4>
+                <p>50€歐元</p>
+                <button class="btn btn-info w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(chicken)">預訂</button>
+              </div>
+              <!-- beef -->
+              <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="beef3" src="https://images.unsplash.com/photo-1615937657715-bc7b4b7962c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODN8fGdyaWxsZWQlMjBiZWVmfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="photo of beef">
+                <h4>牛肉</h4>
+                <p>50€歐元</p>
+                <button class="btn btn-info w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(beef)">預訂</button>
+              </div>
+              <!-- shrimp -->
+              <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="shrimp3" src="https://images.unsplash.com/photo-1642711068544-c336c2af2cd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDA4fHxzaHJpbXB8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="photo of shrimps">
+                <h4>蝦</h4>
+                <p>70€歐元</p>
+                <button class="btn btn-info w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(shrimp)">預訂</button>
+              </div>
+            <!-- drinks -->
+              <!-- mojito -->
+              <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="mojito3" src="https://images.unsplash.com/photo-1551782450-3939704166fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bW9qaXRvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="photo of mojito">
+                <h4>莫吉托</h4>
+                <p>30€歐元</p>
+                <button class="btn btn-info w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(mojito)">預訂</button>
+              </div>
+              <!-- coke -->
+              <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="coke3" src="https://images.unsplash.com/photo-1627260110809-df22a915242b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNvY2ElMjBjb2xhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="photo of coke">
+                <h4>可樂</h4>
+                <p>30€歐元</p>
+                <button class="btn btn-info w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(coke)">預訂</button>
+              </div>
+              <!-- water -->
+              <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="water3" src="https://images.unsplash.com/photo-1616556425595-93db848a50c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGdsYXNzJTIwb2YlMjB3YXRlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="photo of water">
+                <h4>水</h4>
+                <p>30€歐元</p>
+                <button class="btn btn-info w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(water)">預訂</button>
+              </div>
+            <!-- dessert -->
+              <!-- pie -->
+              <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="pie3" src="https://images.unsplash.com/photo-1508736375612-66c03035c629?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzB8fHN0cmF3YmVycnklMjBwaWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="photo of pie">
+                <h4>餡餅</h4>
+                <p>50€歐元</p>
+                <button class="btn btn-info w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(pie)">預訂</button>
+              </div>
+              <!-- cake -->
+              <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="cake3" src="https://images.unsplash.com/photo-1626263468007-a9e0cf83f1ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y2hvY29sYXRlJTIwY2FrZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="photo of cake">
+                <h4>蛋糕</h4>
+                <p>50€歐元</p>
+                <button class="btn btn-info w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(cake)">預訂</button>
+              </div>
+              <!-- ice -->
+              <div class="border product col d-flex justify-content-center align-items-center  text-center flex-column p-2 m-2 fw-bold rounded">
+                <img class="img-fluid" id="ice3" src="https://images.unsplash.com/photo-1629385701021-fcd568a743e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGljZSUyMGNyZWFtfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="photo of ice">
+                <h4>冰淇淋</h4>
+                <p>50€歐元</p>
+                <button class="btn btn-info w-50 d-flex justify-content-center align-items-center text-center fw-bold m-2" onclick = "addToCart(ice)">預訂</button>
+              </div>
+        </div>
+        </div><br><hr>
+
+  </div><br>
+
+    </main>
+
+
+
+
+    <!-- 5 ICONS -->
+    <div class="container-fluid row text-center font justify-content-center mx-0">
+      <!-- Law GDPR-->
+      <div class="icon-container d-flex justify-content-center align-items-center p-1">
+          <a target="_blank" href="footer/law/law.html">
+            <i class="fa-solid fa-scale-balanced"></i>
+          </a>
+      </div>
+
+      <!-- Locate -->
+      <div class="icon-container d-flex justify-content-center align-items-center p-1">
+        <a target="_blank" href="footer/locate/locate.html">
+          <i class="fa-solid fa-location-dot"></i>
+        </a>
+      </div>
+
+      <!-- Contact -->
+      <div class="icon-container d-flex justify-content-center align-items-center p-1">
+        <a target="_blank" href="footer/contact/contact.html">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+      
+      <!-- Follow -->
+      <div class="icon-container d-flex justify-content-center align-items-center p-1">
+        <a target="_blank" href="footer/follow/follow.html">
+          <i class="fa-solid fa-share-from-square"></i>
+        </a>
+      </div>
+
+      <!-- Reviews -->
+      <div class="icon-container d-flex justify-content-center align-items-center p-2">
+        <a target="_blank" href="footer/review/review.html">
+          <i class="fa-solid fa-comment"></i>
+        </a>
+      </div>
+    </div><br>
+
+
+
+        <!-- Attributions -->
+        <div class="attribution text-center">
+          Hotel-House 作品練習<br>
+          程式書寫 <a target="_blank" href="https://portfolio-clemence.netlify.app">Clémence TAN</a>
+          <p>&copy; Copyright 版權 2022 - 版權所有</p>
+        </div>
+
+
+
+
+
+
+    <!-- **************************************** -->
+    <footer class="container-fluid text-center fw-bold">
+      <div class="row container-fluid d-flex justify-content-center align-items-center flex-xxl-row flex-xl-row flex-lg-row flex-md-column flex-sm-column flex-column">
+
+        <div class="footer1 col back d-flex justify-content-center align-items-center m-2 w-50">
+            <a href="../../index.html" class="back fw-bold text-center" target="_blank">Home Page</a>
+        </div>
+        <div class="footer2 col back d-flex justify-content-center align-items-center w-50 m-2 w-50">
+            <a href="../../langs/en/en.html" class="back fw-bold text-center" target="_blank">English Page</a>
+        </div>
+        <div class="footer1 col back d-flex justify-content-center align-items-center w-50 m-2 w-50">
+            <a href="../../langs/fr/fr.html" class="back fw-bold text-center" target="_blank">page française</a>
+        </div>
+        <div class="footer2 col back d-flex justify-content-center align-items-center w-50 m-2 w-50">
+            <a href="../../langs/tw/tw.html" class="back fw-bold text-center" target="_blank">回繁中主頁</a>
+        </div>
+        <div class="footer1 col back d-flex justify-content-center align-items-center w-50 m-2 w-50">
+            <a href="../../langs/ch/ch.html" class="back fw-bold text-center" target="_blank">回简中主页</a>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="js/tw.js"></script>
+  </body>
+</html>

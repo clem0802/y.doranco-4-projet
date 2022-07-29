@@ -1,10 +1,6 @@
 
-let cartItems = []; // an empty ARRAY
-
 // ROOMS
 // -------------------------------------------
-let isTotalHidden = true;
-
 let double = { // an OBJECT
     name: "Double-classic",
     price: 800
@@ -15,7 +11,7 @@ let triple = {
 }
 let quadruple = {
     name: "Quadruple-family",
-    price: 1200
+    price: 1400
 }
 
 // FOOD
@@ -94,8 +90,14 @@ let medical = {
 }
 
 
-
+// CART
 // ---------------------------------------------
+// ---------------------------------------------
+let cartItems = []; // an empty ARRAY
+let isTotalHidden = true;
+let historyContainer = document.getElementById("itemCounter");
+
+
 function addToCart(item) {
     cartItems.push(item);
     document.getElementById("itemCounter").innerHTML = cartItems.length; //!
@@ -107,7 +109,6 @@ function clickCart() {
     showTotal();
 }
 
-// ---------------------------------------------
 function showTotal() {
     let orderTotal = document.getElementById("orderTotal");
     orderTotal.innerHTML = "";
@@ -117,13 +118,18 @@ function showTotal() {
         for (let i = 0; i<cartItems.length; i++) {
             total += cartItems[i].price;
         }
-        orderTotal.innerHTML += "TOTAL: " + total + "€, this is a fictive purchase.";
+        orderTotal.innerHTML += "TOTAL : " + total + "€, RÉSERVATION FICTIVE.";
     }
 }
 
+// RESET btn
+// let newNumber = document.createElement("h5");
+// newNumber.innerHTML = orderTotal.value;
+// newNumber.setAttribute("id", "search");
+// historyContainer.appendChild(newNumber);
+// orderTotal.value = " ";
 
-
-
-// TEST
-// ---------------------------------------------
-// ---------------------------------------------
+// function resetCart(){
+//     let reset = document.getElementById("search");
+//     historyContainer.removeChild(reset);
+// }

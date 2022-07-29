@@ -24,10 +24,37 @@ h1 {
 h2 {
     font-weight: bold;
 }
+
+.share-btn {
+    list-style-type: none;
+    font-size: 20px;
+    color: green;
+    background-color: rgba(250, 250, 150, 0.895);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.share-btn {
+    transition: transform 1s ease-in-out;
+}
+.share-btn:hover {
+    font-size: 25px;
+    font-weight: bold;
+    color: green;
+}
 a i {
     list-style-type: none;
-    font-size: 30px;
-    color: white;
+    font-size: 35px;
+    color: rgb(255, 187, 0);
+}
+
+i {
+    transition: transform 1s ease-in-out;
+}
+i:hover {
+    transform: rotate(360deg);
+    font-size: 40px;
+    color: green;
 }
 
 /* HEADER */
@@ -94,18 +121,10 @@ header, section {
     background-size: cover;
     background-position: center;
     z-index:10;
-    opacity:0.7;
+    opacity:0.8;
 
 }
-i {
-    transition: transform 1s ease-in-out;
-    color: white;
-}
-i:hover {
-    transform: rotate(360deg);
-    font-size: 40px;
-    color: orange;
-}
+
 
 .attribution {
     color: white;
