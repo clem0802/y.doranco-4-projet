@@ -1,0 +1,365 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+/* "import" depuise la page Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@100;400;700&family=Outfit:wght@300;400;700;900&family=Roboto&display=swap');
+
+body {
+    font-family: "Lato", sans-serif;
+    /* font-family: 'Bebas Neue', cursive; */
+    /* font-family: 'Lato', sans-serif; (<<<<) */
+    /* font-family: 'Outfit', sans-serif; */
+    /* font-family: 'Roboto', sans-serif;  */
+}
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* HEADER */
+/* Gestiion MENU: navigation principale */
+nav {
+    background-color: #2C3E50;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+/* "nav > a" => récupère les enfants directs */
+nav a {
+    color: white;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav li {
+    margin: 0 10px;
+}
+nav > a {
+    /* BRUCE WAYNE is the only child "a" direct */
+    font-size: 25px;
+}
+.hamb {
+    display: none;
+}
+
+/* Gestion Zone de Présentation */
+header {
+    background-color: #18BC9C;
+    /* min-height: 100vh; => view height */
+    min-height: calc(100vh - 70px);
+    position: relative;
+    top: 70px;
+}
+header > div {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    bottom: -90%;
+}
+header img {
+    display: block;
+    margin: auto;
+    padding-top: 55px;
+    /* display: flex => plutôt pour agir sur les kids */
+}
+h1 {
+    text-align: center;
+    font-size:  50px;
+    color: white;
+    top: 10%;
+}
+.ligneWhite {
+    display: block;
+    width: 20%;
+    height: 2px;
+    background-color: white;
+    margin: 20px auto;
+}
+header h2 {
+    text-align: center;
+    color: #2C3E50;
+    letter-spacing: 5px;
+}
+
+/* ---------------------------------------- */
+/* MAIN */
+main section {
+    min-height: 100vh;
+    padding: 90px 0;
+}
+main section h2 {
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+/* ---------------------------------------- */
+/* Section SERVICES */
+.ligneBlack {
+    display: block;
+    width: 20%;
+    height: 2px;
+    background-color: #2C3E50;
+    margin: 20px auto;
+}
+#services {
+    /* padding-right: 20px; */
+    /* padding-left: 20px; */
+    padding: inherit 20px;
+    /* "inherit" => "90px" venant de main section {} */
+    /* ça hérite la même valeur */
+}
+#services div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+    /* column-gap: 20px; */
+    /* row-gap: 20px; */
+}
+#services div a {
+    width: 400px;
+    font-weight: bold;
+    font-size: 20px;
+}
+#services div img {
+    width: 100%;
+}
+
+/* ---------------------------------------- */
+/* Section ABOUT */
+#about {
+    background-color: #18BC9C;
+    min-height: 100vh;
+    color: white;
+}
+#about div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+#about article {
+    width: 300px;
+    font-size: 20px;
+
+}
+#about h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #2C3E50;
+    font-weight: 400;
+}
+#about a {
+    color: white;
+    display: block;
+    margin: 50px auto;
+    border: 1px solid white;
+    width: 10%;
+    text-align: center;
+    padding: 15px 10px;
+}
+#about i {
+    margin: 0 10px;
+}
+#about a:hover {
+    /* pseudo-CLASS, permet de définir un style particulier */
+    background-color: white;
+    color: #2C3E50;
+    border-color: #2C3E50;
+    border-style: dashed;
+}
+
+
+/* ---------------------------------------- */
+/* Section CONTACT */
+#contact form {
+    color: #2C3E50;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+#contact form div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    /* margin: auto; => ça va CENTRER le form */
+    margin: auto;
+    min-width: 300px;
+}
+#contact form label {
+    font-size: 20px;
+}
+#contact form input, #contact form textarea {
+    margin: 20px auto;
+    border-style: dashed;
+    border: 1px solid #2C3E50;
+    /* les input rétrécis, donc width 100% */
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+#contact form input {
+    height: 40px;
+}
+#contact form button {
+    width: 125px;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #18BC9C;
+    color: white;
+    font-size: 20px;
+    margin: 15px auto 0 auto;
+}
+
+/* ---------------------------------------- */
+/* HOVER & FOCUS */
+#contact form button:hover {
+    background-color: #128F76;
+}
+#contact form input:focus, #contact form textarea:focus {
+    background-color: #cde5e0;
+}
+
+/* ---------------------------------------- */
+/* EFFETS PARALLAX */
+#parallax {
+    height: 150vh;
+    background: url(../img/nuit.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-attachment: initial;
+}
+
+/* ---------------------------------------- */
+/* Section TÉMOIGNAGES */
+#temoignages {
+    background-color: #18BC9C;
+    min-height: auto;
+}
+#temoignages h2 {
+    color: white;
+}
+#temoignages .conteneur {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-top: 80px;
+    justify-content: space-evenly
+}
+#temoignages .conteneur .card {
+    max-width: 300px;
+    background-color: white;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+#temoignages .conteneur .img-div {
+    text-align: center;
+}
+#temoignages .conteneur .img-div, #temoignages .etoile-div {
+    text-align: center;
+}
+#temoignages .content-div {
+    padding: 10px 40px;
+}
+#temoignages .etoile-div {
+    color: #e8c60a;
+    padding: 10px;
+}
+#temoignages .conteneur img {
+    margin-top: -50px;
+    border-radius: 50%;
+    /* pour modifier le point de départ en Haut Gauche */
+    transform: translate(-50%, -80%);
+    transform: rotate(15deg);
+}
+
+/* ---------------------------------------- */
+/* FOOTER */
+footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+}
+footer h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+footer > div:first-child {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+footer ul {
+    display: flex;
+    justify-content: space-between;
+}
+footer ul a {
+    color: white;
+    font-size: 15px;
+}
+footer ul a:hover {
+    color: #18BC9C;
+}
+footer ul i {
+    font-size: 35px;
+}
+footer > div:last-child {
+    background-color: #1A252F;
+    padding: 20px 0;
+}
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* MEDIA QUERY */
+/* création du breakpoint, under 720px, le code sera exécuté */
+@media screen and (max-width: 720px) {
+    body {
+        background-color: rgb(235, 235, 201);
+    }
+    nav ul {
+        display: none;
+        padding-top: 50px;
+    }
+    .hamb {
+        display: flex;
+    }
+    .fa-window-close {
+        display: none;
+    }
+    #slide {
+        width: 50%;
+        text-align: right;
+    }
+    #about article {
+        flex-direction: column;
+    }
+}
+
+
+
+/* ---------------------------------------- */
+/* 
+(lien pseudo-CLASS)
+https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-classes
+input:checked
+input:empty
+a:visited 
+*/
