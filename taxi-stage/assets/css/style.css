@@ -248,8 +248,9 @@ main section h2 {
     background: url(../img/ma.jpg);
     background-size: cover;
     /* background-repeat: no-repeat; */
-    /* background-attachment: initial; */
-    background-attachment: fixed;
+    background-attachment: initial;
+    /* background-attachment: fixed; */
+    /* "fixed" not working so well when on a small phone screen !! */
 }
 
 /* ---------------------------------------- */
