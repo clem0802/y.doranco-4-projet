@@ -138,6 +138,10 @@ main section h2 {
 #services div img {
     width: 100%;
 }
+#mini {
+    font-size: 10px;
+    padding-top: -10px;
+}
 
 /* ---------------------------------------- */
 /* Section ABOUT */
@@ -241,11 +245,12 @@ main section h2 {
 /* ---------------------------------------- */
 /* EFFETS PARALLAX */
 #parallax {
-    height: 150vh;
-    background: url(../img/nuit.jpg);
+    height: 170vh;
+    background: url(../img/ma.jpg);
     background-size: cover;
     /* background-repeat: no-repeat; */
-    background-attachment: initial;
+    /* background-attachment: initial; */
+    background-attachment: fixed;
 }
 
 /* ---------------------------------------- */
@@ -363,3 +368,33 @@ input:checked
 input:empty
 a:visited 
 */
+
+/* @media (hover) {
+    .interest p {
+      width: max-content;
+      text-align: center;
+    }
+  } */
+
+/* 
+.experience > div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .experience div :where(.date, .entr) {
+    text-align: left;
+    margin-left: .3rem;
+  }
+  
+  @media (hover) {
+    .experience > div {
+      display: grid;
+      grid-template: auto / 1fr 4fr;
+    }
+  
+    .experience div :where(.date, .entr) {
+      text-align: left;
+      margin-left: 0rem;
+    }
+  } */
