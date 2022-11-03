@@ -47,7 +47,7 @@ nav li {
     margin: 0 10px;
 }
 nav > a {
-    /* BRUCE WAYNE is the only child "a" direct */
+    /* Younes Redjdal is the only child "a" direct */
     font-size: 25px;
 }
 .hamb {
@@ -137,6 +137,8 @@ main section h2 {
 }
 #services div img {
     width: 100%;
+    border-radius: 10px;
+    box-shadow: 8px 8px 12px #aaa;
 }
 #mini {
     font-size: 11px;
