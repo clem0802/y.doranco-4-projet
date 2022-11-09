@@ -295,8 +295,8 @@ main section h2 {
     margin-top: -50px;
     border-radius: 50%;
     /* pour modifier le point de départ en Haut Gauche */
-    transform: translate(-50%, -80%);
-    transform: rotate(15deg);
+    /* transform: translate(-50%, -80%); */
+    /* transform: rotate(15deg); */
 }
 
 /* ---------------------------------------- */
